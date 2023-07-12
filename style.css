@@ -1,0 +1,268 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right,rgb(119, 119, 167)), rgb(255,233,236);
+    padding: 0; margin: 0;
+}
+
+header{
+    text-align: center;
+
+}
+
+h1{
+    background-color: rgb(34, 187, 192);
+    padding: 45px; 
+    margin: 0;
+    color: rgb(10, 10, 10); }
+
+h2{
+    font-size: 24px;
+    margin: 0;
+    padding: 0; }
+    
+
+.conteiner{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/*selector universal*/
+/* {
+    font-family: 'Roboto', sans-serif;
+} */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 0);
+}
+li{
+    float: left
+}
+li a{
+    display: block;
+    color: rgb(8, 8, 8);
+    text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(119, 119, 167);
+}
+
+        .image3{
+    width: 300px; 
+        /*ancho deseado*/
+    height: auto; /* altura automatica para mantener la proporcion */ }
+   
+    .image3{
+        width: 250px; 
+            /*ancho deseado*/
+        height: auto; /* altura automatica para mantener la proporcion */
+         }   
+    .image2{
+        width: 400px; 
+            /*ancho deseado*/
+        height: auto; /* altura automatica para mantener la proporcion */
+         }
+        .image{
+            width: 400px; 
+                /*ancho deseado*/
+            height: auto; /* altura automatica para mantener la proporcion */
+             }
+        .image5{
+            width: 300px;
+             /*ancho deseado*/
+        height: auto; /* altura automatica para mantener la proporcion */ }
+        
+        .image6{
+            width: 400px;
+             /*ancho deseado*/
+        height: auto; /* altura automatica para mantener la proporcion */ }
+    .image8{
+        width: 400px;
+         /*ancho deseado*/
+        height: auto; /* altura automatica para mantener la proporcion */ }
+    .image15{
+            width: 400px;
+             /*ancho deseado*/
+            height: auto; /* altura automatica para mantener la proporcion */ }
+
+body{
+    background-image: url(assets/img/fondoclaro.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 0;
+
+
+    
+}
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    
+    }
+
+    nav ul li{
+        margin-right: 0px;
+
+    }
+
+    nav ul li a{
+
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        font-family: Georgia, ‘Times New Roman’, Times, serif;
+
+    }
+    
+
+    
+
+
+
+.argentina{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.argentina figure{
+    width: 25%;
+border: solid 2px black;
+margin-bottom: 20px;
+padding: 10px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.argentina figure img{
+border: solid blue 2px;
+display: block;
+margin: auto;
+
+}
+.argentina figure figcaption{
+    color: red;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.argentina figure p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#galeria img{
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.proyectonuevo8{
+    grid-area: proyecto nuevo (8);
+
+}
+
+.proyectonuevo9{
+    grid-area: proyecto nuevo (9);
+
+    
+
+}
+.proyectonuevo10{
+    grid-area: proyecto nuevo (10);
+
+}
+
+.proyectonuevo11{
+    grid-area: proyecto nuevo (11);
+
+}
+
+.proyecto nuevo12{
+    grid-area: proyecto nuevo (12);
+}
+
+.proyecto nuevo 13{
+    grid-area: proyecto nuevo (13);
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 20vh);
+    grid-template-areas:
+  "proyecto nuevo (8)" "proyecto nuevo (9)" "proyecto nuevo (10)" "proyecto nuevo (11)" "proyecto nuevo (12)" "proyecto nuevo (13)";
+ 
+}
+@media (width > 768px){
+    #galeria{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(4,30hv);
+        grid-template-areas:
+        "proyecto nuevo (8) proyecto nuevo (9)"
+        "proyecto nuevo (10) proyecto nuevo (11)"
+        "proyecto nuevo (12) proyecto nuevo (13)";
+    }
+
+
+}
+@media (width > 1200px){
+    #galeria {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, 33hv);
+        grid-template-areas: 
+        "proyecto nuevo (8) proyecto nuevo (9) proyecto nuevo (10)" 
+        "proyecto nuevo (11) proyecto nuevo (12) proyecto nuevo (13)";
+
+    }
+}
+#galeria img{
+    filter: grayscale(1)
+}
+#galeria img:hover{
+    filter: none;
+}
+
+div::after{
+    content: "__________";
+    display: block;
+    width:100%;
+    height: 5px;
+    background-color: aqua;
+}
+    
