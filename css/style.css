@@ -100,11 +100,7 @@ li a:hover:not(.active) {
              /*ancho deseado*/
             height: auto; /* altura automatica para mantener la proporcion */ }
 
-body{
-    background-image: url(assets/img/fondoclaro.png);
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
+
 
 /*{
     margin: 0;

@@ -1,0 +1,189 @@
+.argentina{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.argentina figure{
+    width: 25%;
+    border: solid 2px black;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.argentina figure img{
+    border: solid blue 2px;
+    display: block;
+    margin:auto;
+}
+
+.argentina figure figcaption{
+    color:black;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.argentina figure p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* add other styles related to the "tienda" section if any */
+#galeria img{
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.proyectonuevo8{
+    grid-area: proyecto nuevo (8);
+
+}
+
+.proyectonuevo9{
+    grid-area: proyecto nuevo (9);
+
+    
+
+}
+.proyectonuevo10{
+    grid-area: proyecto nuevo (10);
+
+}
+
+.proyectonuevo11{
+    grid-area: proyecto nuevo (11);
+
+}
+
+.proyectonuevo12{
+    grid-area: proyecto nuevo (12);
+}
+
+.proyectonuevo13{
+    grid-area: proyecto nuevo (13);
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 30vh);
+    grid-template-areas:
+  "proyecto nuevo (8)" "proyecto nuevo (9)" "proyecto nuevo (10)" "proyecto nuevo (11)" "proyecto nuevo (12)" "proyecto nuevo (13)";
+ 
+}
+@media (width > 768px){
+    #galeria{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(6,30vh);
+        grid-template-areas:
+        "proyecto nuevo (8) proyecto nuevo (9)"
+        "proyecto nuevo (10) proyecto nuevo (11)"
+        "proyecto nuevo (12) proyecto nuevo (13)";
+    }
+
+
+}
+@media (width > 1200px){
+    #galeria {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 300px 300px 1fr;
+        grid-template-areas: 
+        "proyecto nuevo (8) proyecto nuevo (9) proyecto nuevo (10)" 
+        "proyecto nuevo (11) proyecto nuevo (12) proyecto nuevo (13)";
+
+    }
+}
+#galeria img{
+    filter: grayscale(1)
+}
+#galeria img:hover{
+    filter: none;
+}
+
+
+div::after{
+    content: "__________";
+    display: block;
+    width:100%;
+    height: 5px;
+    background-color: aqua;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.foto1, .fot-b, .fot-c, .fot-d, .fot-f, .fot-e{
+    flex: 0 0 33.33%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+@media(width < 1200px){
+    .foto1, .fot-b, .fot-c, 
+    .fot-d, .fot-e, .fot-f{
+        flex: 0 0 50%;
+
+    }
+
+    
+}
+@media(width < 800px){
+   .container
+    .foto1, .fot-b, 
+    .foto-c, .fot-d, 
+    .fot-e, .fot-f{
+        flex: 0 0 85%;
+
+    }
+}
+
+.newells{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.newells figure{
+    width: 25%;
+border: solid 2px red;
+margin-bottom: 20px;
+padding: 10px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.newells figure img{
+border: solid red  4px;
+display: block;
+margin: auto;
+
+}
+.newells figure figcaption{
+    color: red;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.newells figure p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    color: black;
+}

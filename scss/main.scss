@@ -1,0 +1,30 @@
+//main.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import "_vars";
+@import"_commons";
+@import"_nav";
+@import"_tienda";
+
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: $secondary-color;
+}
+
+li {
+    float:left;
+}
+
+
+li a {
+    display: block;
+    color:rgb(8,8,8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* add other global styles if any */
