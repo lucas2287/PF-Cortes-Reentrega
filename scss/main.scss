@@ -1,3 +1,4 @@
+
 //main.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -5,6 +6,19 @@
 @import"_commons";
 @import"_nav";
 @import"_tienda";
+
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255,233,236);
+    padding:0;
+    margin:0;
+    background-color:darkcyan;
+    background-image: url("assets/img/fondoclar.jpg");
+    
+    
+    
+}
 
 
 ul{

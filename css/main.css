@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 /*add other variables and maxins if any */
+
 body {
   font-family: "Courier New", Courier, monospace;
   background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255, 233, 236);
   padding: 0;
   margin: 0;
-  background-color: darkcyan;
+  background-color: rgb(255, 233, 236);
+
+}
+.fondito{
+  background-color: rgb(128, 212, 208)
 }
 
 header {
@@ -13,7 +18,7 @@ header {
 }
 
 h1 {
-  background-color: rgb(34, 187, 192);
+  background-color: rgb(161, 167, 223);
   padding: 45px;
   margin: 0;
   color: rgb(10, 10, 10);
@@ -164,7 +169,8 @@ li a:hover:not(.active) {
 #galeria img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .proyectonuevo8 {
@@ -292,6 +298,15 @@ div::after {
   color: black;
 }
 
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255, 233, 236);
+  padding: 0;
+  margin: 0;
+  background-color: darkcyan;
+  background-image: url("assets/img/fondoclar.jpg");
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -312,6 +327,4 @@ li a {
   text-decoration: none;
 }
 
-/* add other global styles if any */
-
-/*# sourceMappingURL=main.css.map */
+/* add other global styles if any *//*# sourceMappingURL=main.css.map */
