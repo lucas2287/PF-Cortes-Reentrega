@@ -1,24 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-/*add other variables and maxins if any */
-
 body {
   font-family: "Courier New", Courier, monospace;
   background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255, 233, 236);
   padding: 0;
   margin: 0;
-  background-color: rgb(255, 233, 236);
-
+  background-color: darkcyan;
 }
+
 .fondito{
-  background-color: rgb(128, 212, 208)
+  background-color: rgb(64, 156, 144);
 }
-
 header {
   text-align: center;
 }
 
+
 h1 {
-  background-color: rgb(161, 167, 223);
+  background-color: rgb(167,119,151);
   padding: 45px;
   margin: 0;
   color: rgb(10, 10, 10);
