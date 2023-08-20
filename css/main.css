@@ -1,328 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-body {
-  font-family: "Courier New", Courier, monospace;
-  background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255, 233, 236);
-  padding: 0;
-  margin: 0;
-  background-color: darkcyan;
-}
-
-.fondito{
-  background-color: rgb(64, 156, 144);
-}
-header {
-  text-align: center;
-}
-
-
-h1 {
-  background-color: rgb(167,119,151);
-  padding: 45px;
-  margin: 0;
-  color: rgb(10, 10, 10);
-}
-
-h2 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-/*add other common styles if any*/
-.conteiner {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.footer {
-  background-color: darkcyan;
-  color: black;
+input,
+textarea {
+  width: 100%;
   padding: 10px;
-  text-align: center;
-  clear: both;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(255, 255, 0);
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-nav {
+body {
+  margin: 0em;
+  font-family: "Bowlby One SC", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.cover {
+  height: 400px;
+  background-image: url(/assets/img/rsz_3petr-sevcovic-qe1jxyxiwoa-unsplash_3.jpg);
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-small {
+  height: 200px;
+  background-blend-mode: normal;
+}
+
+.product-stripe, .slider {
+  overflow-x: scroll;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgb(0, 0, 0), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+.stripe-container, .slider-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3px 0;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-nav ul li {
-  margin-right: 0px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 300;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-li a:hover:not(.active) {
-  background-color: rgb(72, 156, 64);
-}
-
-/*add other navigation-related styles if any*/
-.image3 {
+.stripe-container .card {
   width: 300px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
+  flex-shrink: 0;
+  margin-right: 1rem;
 }
 
-.image3 {
-  width: 250px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
+.responsive-iframe {
+  position: relative;
+  padding-top: 56.25%;
 }
 
-.image2 {
-  width: 400px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.image {
-  width: 400px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.image5 {
-  width: 300px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.image6 {
-  width: 400px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.image8 {
-  width: 400px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.image15 {
-  width: 400px;
-  /*ancho deseado*/
-  height: auto; /* altura automatica para mantener la proporcion */
-}
-
-.argentina {
-  padding: 20px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.argentina figure {
-  width: 25%;
-  border: solid 2px black;
-  margin-bottom: 20px;
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.argentina figure img {
-  border: solid blue 2px;
-  display: block;
-  margin: auto;
-}
-
-.argentina figure figcaption {
-  color: black;
-  font-size: 1.4em;
-  text-align: center;
-  font-weight: bold;
-}
-
-.argentina figure p {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* add other styles related to the "tienda" section if any */
-#galeria img {
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-.proyectonuevo8 {
-  grid-area: proyecto nuevo 8;
+.slider {
+  overflow-x: hidden;
 }
 
-.proyectonuevo9 {
-  grid-area: proyecto nuevo 9;
+.slider-container {
+  transform: translatex(0);
+  animation: slider 10s infinite;
 }
 
-.proyectonuevo10 {
-  grid-area: proyecto nuevo 10;
-}
-
-.proyectonuevo11 {
-  grid-area: proyecto nuevo 11;
-}
-
-.proyectonuevo12 {
-  grid-area: proyecto nuevo 12;
-}
-
-.proyectonuevo13 {
-  grid-area: proyecto nuevo 13;
-}
-
-#galeria {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 30vh);
-  grid-template-areas: "proyecto nuevo (8)" "proyecto nuevo (9)" "proyecto nuevo (10)" "proyecto nuevo (11)" "proyecto nuevo (12)" "proyecto nuevo (13)";
-}
-
-@media (width > 768px) {
-  #galeria {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(6, 30vh);
-    grid-template-areas: "proyecto nuevo (8) proyecto nuevo (9)" "proyecto nuevo (10) proyecto nuevo (11)" "proyecto nuevo (12) proyecto nuevo (13)";
-  }
-}
-@media (width > 1200px) {
-  #galeria {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 300px 300px 1fr;
-    grid-template-areas: "proyecto nuevo (8) proyecto nuevo (9) proyecto nuevo (10)" "proyecto nuevo (11) proyecto nuevo (12) proyecto nuevo (13)";
-  }
-}
-#galeria img {
-  filter: grayscale(1);
-}
-
-#galeria img:hover {
-  filter: none;
-}
-
-div::after {
-  content: "__________";
-  display: block;
+.image-container {
   width: 100%;
-  height: 5px;
-  background-color: aqua;
+  padding: 25%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.foto1, .fot-b, .fot-c, .fot-d, .fot-f, .fot-e {
-  flex: 0 0 33.33%;
-  text-align: center;
-  padding: 10px;
-}
-
-@media (width < 1200px) {
-  .foto1, .fot-b, .fot-c,
-  .fot-d, .fot-e, .fot-f {
-    flex: 0 0 50%;
+@keyframes slider {
+  0% {
+    transform: translatex(0);
+  }
+  20% {
+    transform: translatex(0);
+  }
+  25% {
+    transform: translatex(-100);
+  }
+  45% {
+    transform: translatex(-100%);
+  }
+  50% {
+    transform: translatex(-200%);
+  }
+  70% {
+    transform: translatex(-200%);
+  }
+  75% {
+    transform: translatex(-300%);
+  }
+  95% {
+    transform: translatex(-300%);
+  }
+  100% {
+    transform: translatex(0);
   }
 }
-@media (width < 800px) {
-  .container .foto1,
-  .fot-b,
-  .foto-c, .fot-d,
-  .fot-e, .fot-f {
-    flex: 0 0 85%;
-  }
-}
-.newells {
-  padding: 20px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.newells figure {
-  width: 25%;
-  border: solid 2px red;
-  margin-bottom: 20px;
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contac {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.newells figure img {
-  border: solid red 4px;
-  display: block;
-  margin: auto;
+form {
+  display: grid;
+  gap: 10px;
 }
 
-.newells figure figcaption {
-  color: red;
-  font-size: 1.4em;
-  text-align: center;
+label {
   font-weight: bold;
 }
 
-.newells figure p {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: red;
-  color: black;
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-body {
-  font-family: "Courier New", Courier, monospace;
-  background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255, 233, 236);
-  padding: 0;
-  margin: 0;
-  background-color: darkcyan;
-  background-image: url("assets/img/fondoclar.jpg");
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(238, 255, 0);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: rgb(8, 8, 8);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* add other global styles if any *//*# sourceMappingURL=main.css.map */
+button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=main.css.map */

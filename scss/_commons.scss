@@ -1,30 +1,20 @@
-body{
-
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to right, rgb(167, 119, 151)), rgb(255,233,236);
-    padding:0;
-    margin:0;
-    background-color:darkcyan;
-    background-image: url("assets/img/fondoclar.jpg");
+body {
     
+    margin:0em;
+    font-family: 'Bowlby One SC', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .cover {
+    height: 400px;
+    background-image: url(/assets/img/rsz_3petr-sevcovic-qe1jxyxiwoa-unsplash_3.jpg);
+    color:white;
+    background-size: cover;
+    background-position: center;
+    }
     
-    
-}
-header{
-    text-align: center;
-
-}
-
-
-
-h1{
-    background-color: rgb(34, 187, 192);
-    padding: 45px; 
-    margin: 0;
-    color: rgb(10 10 10); }
-
-h2{
-    font-size: 24px;
-    margin: 0;
-    padding: 0; }
-/*add other common styles if any*/
+    .cover-small{
+        height: 200px;
+        background-blend-mode: normal;
+    }
+  
